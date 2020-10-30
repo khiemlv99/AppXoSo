@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TraCuu.TheoTinh_Fragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tỉnh/T.Phố" />
+
+                <Spinner
+                    android:id="@+id/spinerTraCuuTheoTinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày" />
+
+                <EditText
+                    android:id="@+id/editTextChonNgayTheoTinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonTraCuuTheoTinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="#ff7418"
+                    android:text="Tra cứu"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#f00"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/TitleTraCuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="14sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/ListLinkTraCuu"
+            android:textColor="#2196F3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewTraCuuTheoTinhDong1"
+                android:layout_weight="8"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#2940D1"
+                android:id="@+id/textViewTraCuuTheoTinhDong2"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ListViewKetQuaTraCuuTheoTinh"
+            android:layout_width="match_parent"
+            android:layout_height="277dp" />
+
+        <LinearLayout
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#f00"
+                android:layout_weight="2"
+                android:id="@+id/idLotoTraCuuDong1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:id="@+id/idLotoTraCuuDong2"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:id="@+id/idLotoTraCuuDong3"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#f00"
+                android:textSize="16sp"
+                android:id="@+id/idLotoTraCuuDong4"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ListViewLoToTraCuuTheoTinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>

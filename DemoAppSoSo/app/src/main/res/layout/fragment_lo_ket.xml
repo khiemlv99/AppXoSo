@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoKet.LoKetFragment">
+
+
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:weightSum="9"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Loto"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Tỉnh/TP"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Giải"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical|center_horizontal"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/loketText"
+                android:inputType="number"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_edit"
+                android:layout_weight="4"
+                android:hint="68"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <Spinner
+                android:id="@+id/ComboboxTinh"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupGiai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:checkedButton="@id/radioAll"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal|center_vertical">
+
+                <RadioButton
+                    android:id="@+id/radioAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Tất cả" />
+
+                <RadioButton
+                    android:id="@+id/radioDB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ĐB" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonLoKetGui1"
+                android:text="gửi"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+                android:background="#122a56"
+                android:textStyle="bold"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/buttonXemKetQua"
+                android:text="xem kết quả"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:background="#ff7418"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#f00"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textStyle="italic"
+            android:text="Lưu ý: Thông tin chỉ mang tính chất tham khảo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/loketKetQua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/idthongbaoLoKet"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutThLoto"
+            android:weightSum="9"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="#f2f3f8"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/idTitleDong1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:background="#f2f3f8"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/idTitleDong2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:background="#f2f3f8"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/idTitleDong3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ListView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ListViewSoKet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

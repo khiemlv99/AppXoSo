@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MienTrungKetQua">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mienTrungTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#cc0000"
+                android:text="Xo so mien trung"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mienTrungNgayThang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#b44545" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/giai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/gialai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="#5146e3"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/ninhthuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#5146e3"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/ListViewMienTrung"
+                android:layout_width="match_parent"
+                android:layout_height="402dp"
+                android:layout_marginTop="10dp" />
+
+            <ListView
+                android:id="@+id/ListViewMienTrungLoTo"
+                android:layout_width="match_parent"
+                android:layout_height="358dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

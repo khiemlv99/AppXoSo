@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoKet.ActivityLoKet">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomLoKet"
+        android:layout_width="match_parent"
+        android:background="#132a56"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/icon_lo_ket"
+        android:layout_height="56dp"/>
+
+    <FrameLayout
+        android:layout_above="@+id/bottomLoKet"
+        android:id="@+id/frame_LoKet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>

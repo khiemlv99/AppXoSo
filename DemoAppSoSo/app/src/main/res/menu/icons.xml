@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_canhan"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Cá nhân" />
+    <item
+        android:id="@+id/nav_soket"
+        android:icon="@drawable/ic_baseline_snooze_24"
+        android:title="Số kết" />
+    <item
+        android:id="@+id/nav_uytin"
+        android:icon="@drawable/ic_baseline_stars_24"
+        android:title="Uy tín" />
+    <item
+        android:id="@+id/nav_them"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:title="Thêm" />
+</menu>

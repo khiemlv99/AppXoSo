@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoKet.LoKetXien3Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cặp số (chỉ áp dụng cho Miền Bắc)"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="9">
+
+            <EditText
+                android:id="@+id/editLo1Xien3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:background="@drawable/custom_edit"
+                android:hint="Cặp lô 1"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/editLo2Xien3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:background="@drawable/custom_edit"
+                android:hint="Cặp lô 2"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/editLo3Xien3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:background="@drawable/custom_edit"
+                android:hint="Cặp lô 3"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/buttonGuiQuaXien3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="5"
+                android:background="#122a56"
+                android:text="Gửi"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonXemKetQuaXien3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="5"
+                android:background="#ff7418"
+                android:text="xem kết quả"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Lưu ý: Thông tin chỉ mang tính chất tham khảo"
+            android:textColor="#f00"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/xien3KetQua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/idthongbaoLoKetXien3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutThXien3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <TextView
+                android:id="@+id/idTitleDong1Xien2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#f2f3f8"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTitleDong2Xien2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#f2f3f8"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTitleDong3Xien2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#f2f3f8"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:clickable="false"
+            android:id="@+id/ListViewSoKetXien3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+</FrameLayout>

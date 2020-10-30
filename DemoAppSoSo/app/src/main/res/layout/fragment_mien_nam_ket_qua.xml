@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MienNamKetQua">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/miennamTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#cc0000"
+                android:text="Xo so mien trung"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mienNamNgayThang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#b44545" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/giaiMienNam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/mienNamDong1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="#5146e3"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mienNamDong2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="#5146e3"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mienNamDong3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#5146e3"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mienNamDong4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#5146e3"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/ListViewMienNam"
+                android:layout_width="match_parent"
+                android:layout_height="484dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/thongBaoLoto1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ListView
+                android:id="@+id/ListViewMienNamLoTo"
+                android:layout_width="match_parent"
+                android:layout_height="358dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

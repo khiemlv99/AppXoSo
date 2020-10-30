@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoKet.LoKetXien2Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cặp số (chỉ áp dụng cho Miền Bắc)"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editLo1"
+                android:hint="Cặp lô 1"
+                android:paddingLeft="10dp"
+                android:background="@drawable/custom_edit"
+                android:layout_marginRight="5dp"
+                android:layout_weight="5"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/editLo2"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="5"
+                android:background="@drawable/custom_edit"
+                android:hint="Cặp lô 2"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Gửi"
+                android:id="@+id/buttonGuiQuaXien2"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+                android:background="#122a56"
+                android:textStyle="bold"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <Button
+                android:id="@+id/buttonXemKetQuaXien2"
+                android:text="xem kết quả"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:background="#ff7418"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#f00"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textStyle="italic"
+            android:text="Lưu ý: Thông tin chỉ mang tính chất tham khảo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/xien2KetQua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/idthongbaoLoKetXien2"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutTh"
+            android:weightSum="9"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="#f2f3f8"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/idTitleDong1Xien2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:background="#f2f3f8"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/idTitleDong2Xien2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:background="#f2f3f8"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/idTitleDong3Xien2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ListView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ListViewSoKetXien2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+
+    </LinearLayout>
+</FrameLayout>
