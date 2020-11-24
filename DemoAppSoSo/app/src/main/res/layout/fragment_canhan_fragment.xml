@@ -27,6 +27,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imageKetQua"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/custome_button"
@@ -75,6 +76,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imageKetQuaDai"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/custome_button"
@@ -233,6 +235,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imageLoGan"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/custome_button"
@@ -312,6 +315,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imageSomo"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/custome_button"

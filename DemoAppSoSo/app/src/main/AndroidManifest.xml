@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TraCuu.TraCuuActivity"></activity>
+        <activity android:name=".LoGan.LoGanActivity"></activity>
+        <activity android:name=".KetQuaDai.DaiMienTrung" />
+        <activity android:name=".KetQuaDai.KetquadaiActivity" />
+        <activity android:name=".SoMo.SomoActivity" />
+        <activity android:name=".TraCuu.TraCuuActivity" />
         <activity android:name=".LoKet.ActivityLoKet" />
         <activity android:name=".phantich.PhanTichActivity" />
         <activity android:name=".ThamKhaoActivity" />

@@ -60,5 +60,17 @@ public class TraCuuActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_traCuu, fragment);
         fragmentTransaction.commit();
     }
+    @Override
+    public void onBackPressed() {
+        finish();
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        finish();
+        return  true;
+    }
+
 
 }
